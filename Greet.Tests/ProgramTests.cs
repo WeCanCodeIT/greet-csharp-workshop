@@ -12,8 +12,10 @@ namespace Greet.Tests
         [Fact]
         public void Greet_Should_Return_Greeting()
         {
+            // Act
             string greeting = Program.Greet("Bob");
 
+            // Assert
             Assert.Equal("Hello, Bob", greeting);
 
         }
