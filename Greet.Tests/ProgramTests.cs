@@ -9,38 +9,23 @@ namespace Greet.Tests
         // For example, when name is "Bob", the method should return a string
         // "Hello, Bob.".
 
-        [Fact]
-        public void Greet_Should_Return_Greeting()
-        {
-            string greeting = Program.Greet("Bob");
+        // Call the test Greet_Should_Return_Greeting()
 
-            Assert.Equal("Hello, Bob", greeting);
 
-        }
 
         // 2: Handle nulls by introducing a stand-in. 
         // For example, when name is null, then the method should
         // return the string "Hello, my friend."
 
-        [Fact]
-        public void Greet_Should_Return_myfriend_for_null()
-        {
-            string greeting = Program.Greet("");
+        // Call the test Greet_Should_Return_Myfriend_for_Null()
 
-            Assert.Equal("Hello, my friend", greeting);
-        }
+
 
         // 3: Handle shouting. When name is all uppercase, then
         // the method should shout back to the user. For example, 
         // when name is "JERRY" then the method should return the string "HELLO JERRY!"
 
-        [Fact]
-        public void Greet_Should_Return_Shout_for_All_Caps()
-        {
-            string greeting = Program.Greet("JERRY");
+        // Call the test Greet_Should_Return_Shout_for_All_Caps()
 
-            Assert.Equal("HELLO JERRY!", greeting);
-
-        }
     }
 }
