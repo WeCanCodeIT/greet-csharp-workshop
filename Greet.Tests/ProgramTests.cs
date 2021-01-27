@@ -11,7 +11,21 @@ namespace Greet.Tests
 
         // Call the test Greet_Should_Return_Greeting()
 
+        [Fact]
 
+        public void Greet_Should_Return_Greeting()
+        {
+            // Arrange: set the stage for our test
+
+
+            // Act: call the method we want to test
+            string greeting = Program.Greet("Bob");
+
+
+            // Assert: prove it did what we expected
+            Assert.Equal("Hello Bob", greeting);
+
+        }
 
         // 2: Handle nulls by introducing a stand-in. 
         // For example, when name is null, then the method should
@@ -19,7 +33,18 @@ namespace Greet.Tests
 
         // Call the test Greet_Should_Return_Myfriend_for_Null()
 
+        [Fact]
+        public void Greet_Should_Return_Myfriend_for_Null()
+        {
+            // Arrange: set the stage for our test
 
+            // Act: call the method we want to test
+            string greeting = Program.Greet("");
+
+            // Assert: prove it did what we expected
+            Assert.Equal("Hello, my friend", greeting);
+
+        }
 
         // 3: Handle shouting. When name is all uppercase, then
         // the method should shout back to the user. For example, 
@@ -27,5 +52,20 @@ namespace Greet.Tests
 
         // Call the test Greet_Should_Return_Shout_for_All_Caps()
 
+        [Fact]
+        public void Greet_Should_Return_Shout_for_All_Caps()
+        {
+            // Arrange: set the stage for our test
+
+
+
+            // Act: call the method we want to test
+            string greeting = Program.Greet("JERRY");
+
+
+            // Assert: prove it did what we expected
+            Assert.Equal("HELLO JERRY", greeting);
+
+        }
     }
 }
